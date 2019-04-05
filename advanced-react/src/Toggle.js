@@ -6,16 +6,16 @@ export default class Toggle extends Component {
   };
 
   toggle = () => {
-    const { on } = this.setState;
     this.setState({
-      on: !on,
+      on: !this.state.on,
     });
   };
 
   render() {
     return (
       <div>
-        <button>Show/Hide</button>
+        {this.state.on && <h1>Toggle Me</h1>}
+        <button onClick={this.toggle}>Show/Hide</button>
       </div>
     );
   }
