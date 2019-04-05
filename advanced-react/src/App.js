@@ -11,7 +11,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Toggle />
+          <Toggle>
+            <h1>Hello</h1>
+          </Toggle>
         </header>
       </div>
     );
