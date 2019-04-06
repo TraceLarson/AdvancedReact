@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,10 +14,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Toggle>
             {({ on, toggle }) => (
-              <div>
+              <>
                 {on && <h1>Show Me</h1>}
                 <button onClick={toggle}>Show / Hide</button>
-              </div>
+              </>
             )}
           </Toggle>
         </header>
