@@ -19,7 +19,7 @@ class App extends Component {
               <>
                 <button onClick={toggle}>LOGIN</button>
                 <Modal on={on} toggle={toggle}>
-                  <h1>Still In A Modal</h1>
+                  <h1>Still</h1>
                 </Modal>
               </>
             )}
